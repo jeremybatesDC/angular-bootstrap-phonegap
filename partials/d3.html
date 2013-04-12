@@ -1,12 +1,11 @@
 <section id="d3view">
-	<span class="nats">Washington Nationals 2013</span><br><span class="tagline">runner attrition, 2013</span>
+<span class="nats">Washington Nationals 2013</span><br><span class="tagline">runner attrition, 2013</span>
 </h2>
-    	<p id="chart"></p>
-    		<p><small>A <a target="_blank" href="http://en.wikipedia.org/wiki/Sankey_diagram">Sankey diagram</a> in <a target="_blank" href="http://d3js.org/">D3.js</a> by <a target="_blank" href="http://jeremybat.es">jB</a></small></p>
-    		</section>
+<p id="chart"></p>
+<p><small>A <a target="_blank" href="http://en.wikipedia.org/wiki/Sankey_diagram">Sankey diagram</a> in <a target="_blank" href="http://d3js.org/">D3.js</a> by <a target="_blank" href="http://jeremybat.es">jB</a></small></p>
+</section>
 <script>
 // var units = "Advancements";
- 
 var margin = {top: 10, right: 10, bottom: 10, left: -30},
     width = 480 - margin.left - margin.right,
     height = 320 - margin.top - margin.bottom;
@@ -113,5 +112,4 @@ d3.json("data/demo.json", function(error, graph) {
     link.attr("d", path);
   }
 });
- 
 </script>
