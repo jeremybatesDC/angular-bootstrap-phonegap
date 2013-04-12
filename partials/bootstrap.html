@@ -2,9 +2,11 @@
     <h1>Bootstrap starter template</h1>
     <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
     <p>This is the partial for view 2.</p>
-            <p><a class="btn btn-primary btn-large" href="http://twitter.github.com/bootstrap/">
-                Bootstrap
-            </a></p>
+            <p>	<div>
+      <label>Name:</label>
+      <input autofocus type="text" ng-model="yourName" placeholder="Enter a name here">
+      <h1>Hello {{yourName}}!</h1>
+    </div></p>
     <p>
         Showing of 'interpolate' filter:
         {{ 'Current version is v%VERSION%.' | interpolate }}
