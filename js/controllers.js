@@ -18,3 +18,6 @@ function MyCtrl1() {
 
 function MyCtrl2() {
 }
+
+function MyCtrl3() {
+}
