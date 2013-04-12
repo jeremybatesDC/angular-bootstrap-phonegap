@@ -3,14 +3,12 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.danlangford.ngbspg"
         version   = "0.0.1">
-    <name>NG-BS-PG</name>
+    <name>meow</name>
 
-    <description>
-        Testing the unions of AngularJS, twitters Bootstrap, Phonegap and the full JQuery
-    </description>
+    <description>anggapd3</description>
 
     <author>
-        danlangford
+        jB
     </author>
 
     <feature name="http://api.phonegap.com/1.0/device" />
