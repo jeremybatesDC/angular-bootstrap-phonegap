@@ -10,7 +10,7 @@
     <author>jB</author>
 
     <feature name="http://api.phonegap.com/1.0/device" />
-<plugin name="Storage" value="org.apache.cordova.Storage" />
+    <plugin name="Storage" value="org.apache.cordova.Storage" />
     <preference name="phonegap-version" value="2.2.0" />
     <preference name="orientation"      value="portrait" />
     <preference name="target-device"    value="universal" />
