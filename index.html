@@ -23,7 +23,7 @@
     <div class="navbar" ng-controller="navCtrl">
         <div class="navbar-inner">
             <ul class="nav">
-                <li ng-class="getClass('/phonegap')"><a href="#/phonegap">Home</a></li>
+                <li ng-class="getClass('/home')"><a href="#/home">Home</a></li>
                 <li ng-class="getClass('/bootstrap')"><a href="#/bootstrap">Tab 1</a></li>
                             <li ng-class="getClass('/d3')"><a href="#/d3">D3</a></li>
 
@@ -34,6 +34,19 @@
 
 <div ng-view></div>
 <div ng-controller="TodoCtrl">
+     <span>{{remaining()}} of {{projects.length}} remaining</span>
+      <!-- <a href="" ng-click="archive()">archive</a> -->
+      <ul class="unstyled">
+        <li ng-repeat="project in projects | filter:search | orderBy:'name'">
+          <input type="checkbox" ng-model="todo.done">
+          <span class="done-{{project.done}}">{{project.name}}</span> <a href="#/edit/{{project._id.$oid}}"><small> [edit]</small></a>
+
+        </li>
+      </ul>
+     </div>
+
+
+<!-- <div ng-controller="TodoCtrl">
       <span>{{remaining()}} of {{todos.length}} remaining</span>
       [ <a href="" ng-click="archive()">archive</a> ]
       <ul class="unstyled">
@@ -46,7 +59,7 @@
         <input type="text" ng-model="todoText"  size="30" placeholder="add new todo here">
         <input class="btn-primary" type="submit" value="add">
       </form>
-    </div>
+</div> -->
 
 <!-- <div>ng-bs-pg seed app: v<span app-version></span></div> -->
 </div> <!-- /.container -->
