@@ -9,7 +9,7 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives'])
 		$routeProvider.when('/bootstrap', {templateUrl:'partials/bootstrap.html', controller:MyCtrl2});
 		$routeProvider.when('/d3', {templateUrl:'partials/d3.html', controller:MyCtrl3});
 
-		$routeProvider.otherwise({redirectTo:'/phonegap'});
+		$routeProvider.otherwise({redirectTo:'/home'});
 	}]).
 
 	run(function ($rootScope, $location) {
