@@ -1,4 +1,14 @@
 <h1>Home</h1>
+
+ <div ng-controller="TodoCtrl">
+      <ul class="unstyled">
+        <li ng-repeat="project in projects | filter:search | orderBy:'name'">
+          <input type="checkbox" ng-model="todo.done">
+          <span class="done-{{project.done}}">{{project.name}}</span>
+        </li>
+        </ul>
+        </div>  
+          
 <div class="PGapp">
     <img src="img/logo.png">
     <h1 class="PG">jB</h1>
@@ -6,14 +16,4 @@
         <p class="status pending blink" ng-hide="deviceready">Connecting to Device</p>
         <p class="status complete blink" ng-show="deviceready">Device is Ready</p>
     </div>
-    <div ng-controller="TodoCtrl">
-     <span>{{remaining()}} of {{projects.length}} remaining</span>
-      <!-- <a href="" ng-click="archive()">archive</a> -->
-      <ul class="unstyled">
-        <li ng-repeat="project in projects | filter:search | orderBy:'name'">
-          <input type="checkbox" ng-model="todo.done">
-          <span class="done-{{project.done}}">{{project.name}}</span> <a href="#/edit/{{project._id.$oid}}"><small> [edit]</small></a>
-        </li>
-      </ul>
-    
 </div>
