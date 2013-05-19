@@ -5,17 +5,20 @@
         version   = "0.0.1">
     <name>meow</name>
 
-    <description>mow mow</description>
+    <description>
+mow mow    </description>
 
-    <author>jB</author>
+    <author>
+        jB
+    </author>
 
     <feature name="http://api.phonegap.com/1.0/device" />
-<plugin name="Storage" value="org.apache.cordova.Storage" />
+
     <preference name="phonegap-version" value="2.2.0" />
     <preference name="orientation"      value="portrait" />
     <preference name="target-device"    value="universal" />
     <preference name="fullscreen"       value="false" />
-    
+
     <icon src="icon.png" />
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:density="ldpi" />
     <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:density="mdpi" />
