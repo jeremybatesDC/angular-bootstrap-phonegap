@@ -6,7 +6,7 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives'])
 
 	config(['$routeProvider', function ($routeProvider) {
 		$routeProvider.when('/home', {templateUrl:'partials/home.html', controller:MyCtrl1});
-		$routeProvider.when('/tab2', {templateUrl:'partials/tab2.html', controller:MyCtrl2});
+		$routeProvider.when('/bootstrap', {templateUrl:'partials/bootstrap.html', controller:MyCtrl2});
 		$routeProvider.when('/d3', {templateUrl:'partials/d3.html', controller:MyCtrl3});
 
 		$routeProvider.otherwise({redirectTo:'/home'});
