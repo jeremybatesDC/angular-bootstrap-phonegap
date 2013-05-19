@@ -2,11 +2,10 @@
     <!-- <img src="img/logo.png"> -->
     <h1 class="PG">jB</h1>
     <div id="deviceready">
-      <!--  <p class="status pending blink" ng-hide="deviceready">Connecting to Device</p> -->
+        <p class="status pending blink" ng-hide="deviceready">Connecting to Device</p>
         <p class="status complete blink" ng-show="deviceready">Device is Ready</p>
     </div>  
-</div>
-<div ng-controller="TodoCtrl">
+    <div ng-controller="TodoCtrl">
      <span>{{remaining()}} of {{projects.length}} remaining</span>
       <!-- <a href="" ng-click="archive()">archive</a> -->
       <ul class="unstyled">
@@ -16,3 +15,4 @@
         </li>
       </ul>
      </div>
+</div>
