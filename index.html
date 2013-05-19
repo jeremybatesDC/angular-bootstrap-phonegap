@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en" ng-app="myApp">
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="format-detection" content="telephone=no" />
@@ -13,7 +14,9 @@
     <link rel="stylesheet" type="text/css" href="css/app.css"/>                     <!-- NG, PG -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">            <!-- BS -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css"> <!-- BS -->
+
     <!-- Fav and touch icons defined in PhoneGap config -->
+
 </head>
 
 <body>
@@ -43,12 +46,15 @@
         </li>
       </ul>
       <form ng-submit="addTodo()">
-        <input type="text" ng-model="todoText"  size="30" placeholder="add new todo here">
+        <input type="text" ng-model="todoText"  size="30"
+               placeholder="add new todo here">
         <input class="btn-primary" type="submit" value="add">
       </form>
     </div>
 
 <!-- <div>ng-bs-pg seed app: v<span app-version></span></div> -->
+
+
 </div> <!-- /.container -->
 
 <!-- In production use: -->
