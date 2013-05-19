@@ -4,32 +4,25 @@
     <div id="deviceready">
         <p class="status pending blink" ng-hide="deviceready">Connecting to Device</p>
         <p class="status complete blink" ng-show="deviceready">Device is Ready</p>
-    </div>  
-    <form name="myForm">
-  <div class="control-group" ng-class="{error: myForm.name.$invalid}">
-    <label>Whatcha need?</label>
-    <input type="text" name="name" ng-model="project.name" required>
-    <span ng-show="myForm.name.$error.required" class="help-inline"></span>
-  </div>
- 
- <!-- <div class="control-group" ng-class="{error: myForm.site.$invalid}">
-    <label>Website</label>
-    <input type="url" name="site" ng-model="project.site" required>
-    <span ng-show="myForm.site.$error.required" class="help-inline">
-        Required</span>
-    <span ng-show="myForm.site.$error.url" class="help-inline">
-        Not a URL</span>
-  </div>
- 
-  <label>Description</label>
-  <textarea name="description" ng-model="project.description"></textarea> -->
- 
-  <br>
-  <a href="#/" class="btn">Cancel</a>
-  <button ng-click="save()" ng-disabled="isClean() || myForm.$invalid"
-          class="btn btn-primary">Save</button>
-  <button ng-click="destroy()"
-          ng-show="project._id" class="btn btn-danger">Delete</button>
-</form>
-     
+        <script type="text/javascript">
+
+       // Wait for Cordova to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // Cordova is ready
+    //
+    function onDeviceReady() {
+        window.localStorage.setItem("key", "value");
+        var keyname = window.localStorage.key(i);
+        // keyname is now equal to "key"
+        var value = window.localStorage.getItem("key");
+        // value is now equal to "value"
+        window.localStorage.removeItem("key");
+        window.localStorage.setItem("key2", "value2");
+        window.localStorage.clear();
+        // localStorage is now empty
+    }
+</script>
+    </div>   
 </div>
