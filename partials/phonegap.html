@@ -7,15 +7,4 @@
         <p class="status pending blink" ng-hide="deviceready">Connecting to Device</p>
         <p class="status complete blink" ng-show="deviceready">Device is Ready</p>
     </div>
-    
-        <div ng-view></div>
-<script>angular.module('project', ['mongolab']).
-  config(function($routeProvider) {
-    $routeProvider.
-      when('/', {controller:ListCtrl, templateUrl:'list.html'}).
-      when('/edit/:projectId', {controller:EditCtrl, templateUrl:'detail.html'}).
-      when('/new', {controller:CreateCtrl, templateUrl:'detail.html'}).
-      otherwise({redirectTo:'/'});
-  });
-  </script>
 </div>
